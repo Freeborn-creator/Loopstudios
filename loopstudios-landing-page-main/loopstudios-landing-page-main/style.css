@@ -1,0 +1,302 @@
+*{
+    margin: 0%;
+}
+
+.ham {
+    display: none;
+}
+
+
+
+header{
+ background-image: url(./images/desktop/image-hero.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: white;
+ padding-block: 5vh;
+ padding-inline: 10vw;
+ height: 80vh;
+
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  font-family: "Alata", sans-serif;
+  font-weight: 100;
+
+} 
+header p{
+  border: 1.5px solid white;
+  width: 35%;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10vh;
+  font-size: 3rem;
+  line-height: 3.5rem;
+
+}
+@font-face {
+    src: url(Josefin+Sans);
+    font-family: Josefin+Sans;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding-block: 7vh;
+    padding-inline: 10vw;
+
+}
+
+main div:nth-child(1) {
+    background-image: url(images/desktop/image-interactive.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    width: 55%;
+}
+
+main div:nth-child(2) {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    position: relative;
+    right: 100px;
+    padding: 30px 0 0 30px;
+}
+
+main div:nth-child(2) h2{
+font-family: ;
+font-size: 2rem;
+text-transform: uppercase;
+}
+
+.odd{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10vw;
+    padding-block: 5vh;
+}
+
+.odd p{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 7%;
+    padding-left: 3px;
+    position: relative;
+    right: 100px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 70%;
+    margin-inline: 10vw;
+    height: 100vh;
+}
+
+section div{
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+
+}
+
+section div:nth-child(1){
+    background-image: url(images/desktop/image-deep-earth.jpg);
+}
+section div:nth-child(2){
+    background-image: url(images/desktop/image-night-arcade.jpg);
+}
+section div:nth-child(3){
+    background-image: url(images/desktop/image-soccer-team.jpg);
+}
+section div:nth-child(4){
+    background-image: url(images/desktop/image-grid.jpg);
+}
+section div:nth-child(5){
+    background-image: url(images/desktop/image-from-above.jpg);
+}
+section div:nth-child(6){
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+}  
+section div:nth-child(7){
+    background-image: url(images/desktop/image-curiosity.jpg);
+}
+section div:nth-child(8){
+    background-image: url(images/desktop/image-fisheye.jpg);
+}
+
+section p{
+    color: white;
+    position: relative;
+    top: 220px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.div-1{
+    align-items: start;
+}
+
+.div-2{
+    align-items: end;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+.div-1 ul{
+    display: flex;
+    gap: 20px;
+}
+
+.div-2 ul{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .ham {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header{
+        background-image: url(images/mobile/image-hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        padding-block: 5vh;
+        padding-inline: 10vw;
+        height: 80vh;
+     }
+
+     header p {
+        border: 1.5px solid white;
+        width: 85%;
+        padding: 15px;
+        margin-top: 10vh;
+        font-size: 2.5rem;
+     }
+
+     main {
+        flex-direction: column;
+        padding-block: 7vh;
+        padding-inline: 10vw;
+        gap: 20px;
+    
+    }
+
+    main div:nth-child(1) {
+        height: 65vh;
+    }
+
+    main div:nth-child(2) {
+        padding-left: 0;
+        padding-top: o;
+        align-items: center;
+        position: static;
+    }
+
+    main div:nth-child(1), main div:nth-child(2) {
+        width: 100%;
+        margin: auto;
+    }
+
+    main div:nth-child(2) h2 {
+        padding-inline: 7vw;
+        font-size:2rem
+    }
+
+    p.even{
+    display: none;
+} 
+
+.odd h2{
+    font-size: 2rem;
+    padding-inline: 5vw;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    margin-inline: 14vw;
+}
+
+section p{
+    color: white;
+    position: relative;
+    top: 80px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-1 ul {
+    gap: 10px;
+    align-items: center;
+    margin-inline: 6vw;
+}
+
+.div-1 {
+    margin-block: 7vh;
+}
+
+.div-2 ul {
+   padding-right: 80px;
+}
+
+.div-2 p {
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+.div-1 ul{
+    flex-direction: column;
+}
+}
